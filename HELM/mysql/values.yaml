@@ -1,0 +1,22 @@
+root:
+  password: "root"
+
+db:
+  name: "yingzhuo"
+  user: "yingzhuo"
+  password: "yingzhuo"
+
+master:
+  persistence:
+    existingClaim: "helm-pvc-mysql-master"
+  securityContext:
+    enabled: true
+    fsGroup: 0
+    runAsUser: 0
+slave:
+  persistence:
+    existingClaim: "helm-pvc-mysql-slave"
+  securityContext:
+    enabled: true
+    fsGroup: 0
+    runAsUser: 0

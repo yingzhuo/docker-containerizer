@@ -1,0 +1,34 @@
+# ----------------------------------------------------------------------------------------------------------------------
+# 持久化
+# ----------------------------------------------------------------------------------------------------------------------
+
+# master节点
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: helm-pv-redis
+  labels:
+    helm-persistent: redis
+spec:
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteMany
+  nfs:
+    server: 192.168.99.111
+    path: /mnt/kubernetes/helm_redis
+  persistentVolumeReclaimPolicy: Retain
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: helm-pvc-redis
+spec:
+  selector:
+    matchLabels:
+      helm-persistent: redis
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 5Gi

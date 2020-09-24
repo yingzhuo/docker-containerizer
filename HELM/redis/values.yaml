@@ -1,0 +1,14 @@
+userPassword: true
+password: "root"
+
+cluster:
+  enabled: false
+  slaveCount: 0
+
+persistence:
+  existingClaim: "helm-pvc-redis"
+
+securityContext:
+  enabled: true
+  fsGroup: 0
+  runAsUser: 0

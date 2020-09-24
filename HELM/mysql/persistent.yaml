@@ -1,0 +1,67 @@
+# ----------------------------------------------------------------------------------------------------------------------
+# 持久化
+# ----------------------------------------------------------------------------------------------------------------------
+
+# master节点
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: helm-pv-mysql-master
+  labels:
+    helm-persistent: mysql-master
+spec:
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteMany
+  nfs:
+    server: 192.168.99.111
+    path: /mnt/kubernetes/helm_mysql/master
+  persistentVolumeReclaimPolicy: Retain
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: helm-pvc-mysql-master
+spec:
+  selector:
+    matchLabels:
+      helm-persistent: mysql-master
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 5Gi
+
+---
+
+#  slave节点
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: helm-pv-mysql-slave
+  labels:
+    helm-persistent: mysql-slave
+spec:
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteMany
+  nfs:
+    server: 192.168.99.111
+    path: /mnt/kubernetes/helm_mysql/slave
+  persistentVolumeReclaimPolicy: Retain
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: helm-pvc-mysql-slave
+spec:
+  selector:
+    matchLabels:
+      helm-persistent: mysql-slave
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 5Gi
