@@ -2,4 +2,4 @@
 
 helm install redis-release \
   -f values.yaml \
-  bitnami/reids
+  bitnami/redis
