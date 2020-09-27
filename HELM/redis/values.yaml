@@ -3,7 +3,11 @@ password: "root"
 
 cluster:
   enabled: false
-  slaveCount: 0
+  slaveCount: 1
+
+slave:
+  persistence:
+    enabled: false
 
 persistence:
   existingClaim: "helm-pvc-redis"
