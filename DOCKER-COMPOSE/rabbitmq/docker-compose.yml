@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  rabbitmq:
+    image: "rabbitmq:3.8.9-management-alpine"
+    container_name: "rabbitmq"
+    restart: "always"
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - "${PWD}/data/:/var/lib/rabbitmq/"
+    environment:
+      - "RABBITMQ_DEFAULT_USER=root"
+      - "RABBITMQ_DEFAULT_PASS=root"
