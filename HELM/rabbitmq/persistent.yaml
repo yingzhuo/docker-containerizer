@@ -1,0 +1,33 @@
+# ----------------------------------------------------------------------------------------------------------------------
+# 持久化
+# ----------------------------------------------------------------------------------------------------------------------
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: helm-pv-rabbitmq
+  labels:
+    helm-persistent: rabbitmq
+spec:
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteMany
+  nfs:
+    server: 192.168.99.111
+    path: /mnt/kubernetes/helm_rabbitmq
+  persistentVolumeReclaimPolicy: Retain
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: helm-pvc-rabbitmq
+spec:
+  selector:
+    matchLabels:
+      helm-persistent: rabbitmq
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 5Gi

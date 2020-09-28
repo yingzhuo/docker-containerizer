@@ -1,0 +1,26 @@
+auth:
+  username: root
+  password: root
+
+persistence:
+  enabled: true
+  existingClaim: "helm-pvc-rabbitmq"
+
+#livenessProbe:
+#  exec:
+#    command:
+#      - /bin/true
+#
+#readinessProbe:
+#  exec:
+#    command:
+#      - /bin/true
+#
+#customLivenessProbe:
+#  exec:
+#    command:
+#      - /bin/true
+#customReadinessProbe:
+#  exec:
+#    command:
+#      - /bin/true

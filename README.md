@@ -11,3 +11,4 @@
 * [2) helm](./HELM)
     * [mysql](./HELM/mysql)
     * [redis](./HELM/redis)
+    * [~~rabbitmq~~](./HELM/rabbitmq)
