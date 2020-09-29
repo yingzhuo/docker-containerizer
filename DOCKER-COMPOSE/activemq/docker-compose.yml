@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  activemq:
+    image: "webcenter/activemq:5.14.3"
+    container_name: "activemq"
+    restart: "always"
+    ports:
+      - "61616:61616"
+      - "8161:8161"
+    volumes:
+      - "${PWD}/data/:/data/activemq/"
