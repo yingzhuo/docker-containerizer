@@ -6,7 +6,7 @@
     * [mysql](./DOCKER-COMPOSE/mysql)
     * [redis](./DOCKER-COMPOSE/redis)
     * [rabbitmq](./DOCKER-COMPOSE/rabbitmq)
-    * [rabbitmq](./DOCKER-COMPOSE/activemq)
+    * [activemq](./DOCKER-COMPOSE/activemq)
     * [snowflake](./DOCKER-COMPOSE/snowflake)
 
 * [2) helm](./HELM)
