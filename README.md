@@ -7,6 +7,7 @@
     * [redis](./DOCKER-COMPOSE/redis)
     * [rabbitmq](./DOCKER-COMPOSE/rabbitmq)
     * [activemq](./DOCKER-COMPOSE/activemq)
+    * [mongodb](./DOCKER-COMPOSE/mongo)
     * [snowflake](./DOCKER-COMPOSE/snowflake)
 
 * [2) helm](./HELM)
