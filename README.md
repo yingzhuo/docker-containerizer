@@ -8,6 +8,7 @@
     * [rabbitmq](./DOCKER-COMPOSE/rabbitmq)
     * [activemq](./DOCKER-COMPOSE/activemq)
     * [mongodb](./DOCKER-COMPOSE/mongo)
+    * [nexus](./DOCKER-COMPOSE/nexus)
     * [snowflake](./DOCKER-COMPOSE/snowflake)
 
 * [2) helm](./HELM)
