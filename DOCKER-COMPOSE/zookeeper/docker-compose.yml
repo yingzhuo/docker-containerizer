@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  zookeeper:
+    image: "registry.cn-shanghai.aliyuncs.com/yingzhuo/zookeeper:3.5.7"
+    container_name: "zookeeper"
+    restart: "always"
+    ports:
+      - "2181:2181"
+    volumes:
+      - "${PWD}/data/:/opt/zookeeper/data/"

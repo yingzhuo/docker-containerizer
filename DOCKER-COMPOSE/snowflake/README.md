@@ -1,3 +1,3 @@
 ### Note
 
-[yingzhor/snowflake](https://github.com/yingzhuo/snowflake)
+* [yingzhuo/snowflake](https://github.com/yingzhuo/snowflake)
