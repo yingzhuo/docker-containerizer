@@ -10,6 +10,7 @@
     * [mongodb](./DOCKER-COMPOSE/mongo)
     * [nexus](./DOCKER-COMPOSE/nexus)
     * [zookeeper](./DOCKER-COMPOSE/zookeeper)
+    * [kafka](./DOCKER-COMPOSE/kafka)
     * [elastic](./DOCKER-COMPOSE/elastic)
     * [snowflake](./DOCKER-COMPOSE/snowflake)
 
