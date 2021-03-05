@@ -2,10 +2,10 @@ version: "3.9"
 
 services:
   nexus:
-    image: "sonatype/nexus3:3.17.0"
+    image: "sonatype/nexus3:3.30.0"
     container_name: "nexus3"
     restart: "always"
     ports:
       - "8081:8081"
     volumes:
-      - "${PWD}/nexus-data/:/nexus-data/"
+      - "${PWD}/data/:/nexus-data/"
