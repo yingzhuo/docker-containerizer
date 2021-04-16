@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  nginx:
+    image: "nginx:1.18.0-alpine"
+    container_name: "nginx"
+    restart: "always"
+    ports:
+      - "7788:80"
+    volumes:
+      - "${PWD}/static/:/usr/share/nginx/html/"
