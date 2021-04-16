@@ -9,8 +9,8 @@
     * [activemq](./DOCKER-COMPOSE/activemq)
     * [mongodb](./DOCKER-COMPOSE/mongo)
     * [nexus](./DOCKER-COMPOSE/nexus)
+    * [nexus](./DOCKER-COMPOSE/nginx)
     * [zookeeper](./DOCKER-COMPOSE/zookeeper)
-    * [kafka](./DOCKER-COMPOSE/kafka)
     * [elastic](./DOCKER-COMPOSE/elastic)
     * [snowflake](./DOCKER-COMPOSE/snowflake)
 
