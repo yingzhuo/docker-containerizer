@@ -11,7 +11,7 @@ services:
       - "${PWD}/data/:/data"
     environment:
       - "MINIO_ACCESS_KEY=minio"
-      - "MINIO_SECRET_KEY=minio"
+      - "MINIO_SECRET_KEY=minio-minio"
     command:
       - "server"
       - "/data"
