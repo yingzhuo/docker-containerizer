@@ -14,6 +14,7 @@
   * [elastic](./DOCKER-COMPOSE/elastic)
   * [minio](./DOCKER-COMPOSE/minio)
   * [snowflake](./DOCKER-COMPOSE/snowflake)
+  * [xxl-job](./DOCKER-COMPOSE/xxl-job)
 
 * [2) helm](./HELM)
   * [mysql](./HELM/mysql)
